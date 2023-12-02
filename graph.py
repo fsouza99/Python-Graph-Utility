@@ -130,7 +130,7 @@ class UndirectedGraph(Graph):
                 forest.remove(vset)
         return A
 
-    def primMST(self) -> Node: # Kruskal's Algorithm for the Minimum Spanning Tree problem.
+    def primMST(self) -> Node: # Prim's Algorithm for the Minimum Spanning Tree problem.
         for v in self.vertices:
             v.key = INFINITE
             v.parent = None
